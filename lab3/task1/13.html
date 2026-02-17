@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>13th example. Function expressions</p>
+        <script>
+        function ask(question, yes, no) {
+            if (confirm(question)) yes()
+            else no();
+        }
+        function showOk() {
+            alert( "You agreed." );
+        }
+        function showCancel() {
+            alert( "You canceled the execution." );
+        }
+        
+        ask("Do you agree?", showOk, showCancel);
+        </script>
+    </body>
+</html>

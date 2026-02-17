@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>22nd example. Date and time</p>
+        <script>
+            let now = new Date();
+            alert( now );
+
+            let date = new Date();
+            alert( date.getHours() );
+
+            let today = new Date();
+            today.setHours(0);
+            alert(today); // still today, but the hour is changed to 0
+            today.setHours(0, 0, 0, 0);
+            alert(today); // still today, now 00:00:00 sharp.
+
+            let date1 = new Date(2016, 1, 28);
+            date1.setDate(date1.getDate() + 2);
+            alert( date1 );
+
+            
+        </script>
+    </body>
+</html>

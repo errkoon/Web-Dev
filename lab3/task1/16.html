@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>16th example. Object methods, "this"</p>
+        <script>
+           let user = { name: "John" };
+           let admin = { name: "Admin" };
+           
+           function sayHi() {
+            alert( this.name );
+        }
+        user.f = sayHi;//новые функции
+        admin.f = sayHi;
+        
+        user.f(); 
+        admin.f(); 
+        </script>
+    </body>   
+</html>

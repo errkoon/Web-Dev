@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>15th example. Object references and copying</p>
+        <script>
+            // Object.assign
+            let user = {
+                name: "John",
+                sizes: {
+                    height: 182,
+                    width: 50
+                }
+            };
+            let clone = Object.assign({}, user);
+            alert( user.sizes === clone.sizes ); //true
+            user.sizes.width = 60;    
+            alert(clone.sizes.width); //меняется значение на 60. потому что он копирует ТОЛЬКО ссылки на вложенные объекты
+
+
+            //structuredClone
+            let user = {
+                name: "John",
+                sizes: {
+                    height: 182,
+                    width: 50
+                }
+            };
+            let clone1 = structuredClone(user);
+            alert( user.sizes === clone1.sizes ); //false
+            user.sizes.width = 60;   
+            alert(clone1.sizes.width); //значение остается 50. потому что создает новые независимые объекты
+
+
+        </script>
+    </body>
+    
+</html>
