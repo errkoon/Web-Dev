@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>23rd example. JSON methods, toJSON</p>
+        <script>
+            //stringify
+            let student = {
+                name: 'John',
+                age: 30,
+                isAdmin: false,
+                courses: ['html', 'css', 'js'],
+                spouse: null
+            };
+
+            let json = JSON.stringify(student);
+
+            alert(typeof json); // we've got a string!
+            alert(json);
+
+            //parse
+            let userData = '{ "name": "John", "age": 35, "isAdmin": false, "friends": [0,1,2,3] }';
+            let user = JSON.parse(userData);
+            alert( user.friends[1] ); //1
+        </script>
+    </body>
+</html>

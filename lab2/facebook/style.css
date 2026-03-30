@@ -1,0 +1,155 @@
+/* Сброс стандартных отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Вся страница */
+body {
+    background-color: #f0f2f5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+/* Центровка по экрану */
+.page {
+    height: 100vh; /*viewport height*/
+    display: flex; /*режим гибкой вёрстки*/
+    justify-content: center;
+    align-items: center;
+}
+
+/* Общий контейнер */
+.container {
+    width: 980px;
+    display: flex;
+    justify-content:space-between;
+}
+
+/* Левая часть */
+.left {
+    width: 500px;
+    padding-top: 60px;
+}
+
+
+.logo {
+    color: #0055ff;
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.desc {
+    font-family: SFProDisplay-Regular,Helvetica,Arial,sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    width: 500px;
+}
+
+/* Правая часть */
+.right {
+    width: 396px;
+    margin-top: 20px;
+}
+
+/* Белая карточка */
+.login-box {
+    background-color: white;
+    padding: 20px 16px; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Поля ввода */
+.login-box input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Кнопка входа */
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #0055ff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 14px;
+}
+
+/* Ссылка */
+.forgot {
+    display: block;
+    font-size: 14px;
+    color: #1877f2;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+
+hr {
+    margin: 16px 0;
+    color: lightgrey;
+    size: 1px;
+}
+
+
+/* Кнопка создания */
+.create-btn {
+    padding: 15px 30px;
+    background-color: #42b72a;
+    color: white;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    
+}
+
+.create-page{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+
+
+/* Нижний блок */
+.footer {
+    background-color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    width: 980px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #737373;
+}
+
+.languages,
+.links {
+    margin-bottom: 8px;
+}
+
+.languages {
+    border-bottom: 1px solid #dddfe2;
+    padding-bottom: 8px;
+}
+
+.footer-content div {
+    line-height: 1.6;
+}
+
